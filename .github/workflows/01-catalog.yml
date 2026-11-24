@@ -1,0 +1,26 @@
+name: КТ 1 — Каталог и карточка товара
+on:
+  push:
+    paths: ['01-catalog/**', '.github/workflows/01-catalog.yml']
+  pull_request:
+    paths: ['01-catalog/**', '.github/workflows/01-catalog.yml']
+permissions:
+  contents: read
+jobs:
+  playwright:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: 01-catalog
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - run: npx playwright install --with-deps chromium
+      - run: npm test
+
