@@ -4,19 +4,23 @@ export class CatalogPage {
   }
 
   async search(query) {
-    throw new Error('Реализуйте search');
+    // BEGIN
+    // END
   }
 
   async selectBrand(brand) {
-    throw new Error('Реализуйте selectBrand');
+    // BEGIN
+    // END
   }
 
   async openProduct(name) {
-    throw new Error('Реализуйте openProduct');
+    // BEGIN
+    // END
   }
 
   async nextPage() {
-    throw new Error('Реализуйте nextPage');
+    // BEGIN
+    // END
   }
 }
 

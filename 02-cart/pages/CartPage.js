@@ -4,19 +4,23 @@ export class CartPage {
   }
 
   async addProduct(name) {
-    throw new Error('Реализуйте addProduct');
+    // BEGIN
+    // END
   }
 
   async open() {
-    throw new Error('Реализуйте open');
+    // BEGIN
+    // END
   }
 
   async removeProduct(name) {
-    throw new Error('Реализуйте removeProduct');
+    // BEGIN
+    // END
   }
 
   async clear() {
-    throw new Error('Реализуйте clear');
+    // BEGIN
+    // END
   }
 }
 

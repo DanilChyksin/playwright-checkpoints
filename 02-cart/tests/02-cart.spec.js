@@ -5,27 +5,31 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/');
 });
 
-test('[1] addProduct', async ({ page }) => {
+test('Задание 1', async ({ page }) => {
   const model = new CartPage(page);
+  // BEGIN
   await model.addProduct('Red Lipstick');
-  // TODO: подготовьте данные и добавьте проверки по условию.
+  // END
 });
 
-test('[2] open', async ({ page }) => {
+test('Задание 2', async ({ page }) => {
   const model = new CartPage(page);
+  // BEGIN
   await model.open();
-  // TODO: подготовьте данные и добавьте проверки по условию.
+  // END
 });
 
-test('[3] removeProduct', async ({ page }) => {
+test('Задание 3', async ({ page }) => {
   const model = new CartPage(page);
+  // BEGIN
   await model.removeProduct('Red Lipstick');
-  // TODO: подготовьте данные и добавьте проверки по условию.
+  // END
 });
 
-test('[4] clear', async ({ page }) => {
+test('Задание 4', async ({ page }) => {
   const model = new CartPage(page);
+  // BEGIN
   await model.clear();
-  // TODO: подготовьте данные и добавьте проверки по условию.
+  // END
 });
 
